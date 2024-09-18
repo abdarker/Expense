@@ -103,5 +103,4 @@ Map<String, dynamic> _$$DebitModelImplToJson(_$DebitModelImpl instance) =>
 const _$DebitTypeEnumMap = {
   DebitType.debit: 'debit',
   DebitType.credit: 'credit',
-  DebitType.goal: 'goal',
 };

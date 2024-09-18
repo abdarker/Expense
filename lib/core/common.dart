@@ -9,8 +9,6 @@ export 'extensions/debit_extensions.dart';
 export 'extensions/double_extensions.dart';
 export 'extensions/transaction_extensions.dart';
 export 'extensions/filter_expense_extension.dart';
-export 'extensions/recurring_extension.dart';
-export 'extensions/recurring_type_ext.dart';
 export 'extensions/text_style_extension.dart';
 export 'extensions/time_extension.dart';
 export 'extensions/debt_transaction_extension.dart';

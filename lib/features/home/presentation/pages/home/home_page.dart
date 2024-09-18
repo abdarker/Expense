@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -7,24 +7,24 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:home_widget/home_widget.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:paisa/core/common.dart';
+import 'package:paisa/core/common_enum.dart';
 import 'package:paisa/core/widgets/mult_value_listenable_builder.dart';
+import 'package:paisa/core/widgets/paisa_widget.dart';
 import 'package:paisa/features/account/data/model/account_model.dart';
 import 'package:paisa/features/account/domain/entities/account_entity.dart';
 import 'package:paisa/features/category/data/model/category_model.dart';
 import 'package:paisa/features/category/domain/entities/category.dart';
 import 'package:paisa/features/home/presentation/controller/summary_controller.dart';
-import 'package:paisa/features/transaction/data/model/transaction_model.dart';
-import 'package:paisa/features/transaction/domain/entities/transaction_entity.dart';
-import 'package:provider/provider.dart';
-import 'package:responsive_builder/responsive_builder.dart';
-import 'package:paisa/core/common_enum.dart';
-import 'package:paisa/core/widgets/paisa_widget.dart';
 import 'package:paisa/features/home/presentation/pages/home/home_cubit.dart';
 import 'package:paisa/features/home/presentation/widgets/home_desktop_widget.dart';
 import 'package:paisa/features/home/presentation/widgets/home_mobile_widget.dart';
 import 'package:paisa/features/home/presentation/widgets/home_tablet_widget.dart';
 import 'package:paisa/features/home/presentation/widgets/variable_size_fab.dart';
+import 'package:paisa/features/transaction/data/model/transaction_model.dart';
+import 'package:paisa/features/transaction/domain/entities/transaction_entity.dart';
 import 'package:paisa/main.dart';
+import 'package:provider/provider.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 final destinations = [
   Destination(
@@ -57,17 +57,6 @@ final destinations = [
     icon: Icon(MdiIcons.timetable),
     selectedIcon: Icon(MdiIcons.timetable),
   ),
-  Destination(
-    pageType: PageType.recurring,
-    icon: Icon(MdiIcons.cashSync),
-    selectedIcon: Icon(MdiIcons.cashSync),
-  ),
-  if (kDebugMode)
-    Destination(
-      pageType: PageType.goals,
-      icon: Icon(MdiIcons.cashSync),
-      selectedIcon: Icon(MdiIcons.cashSync),
-    ),
 ];
 
 class HomePage extends StatelessWidget {

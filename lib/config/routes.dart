@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import 'package:go_router/go_router.dart';
 import 'package:hive_flutter/adapters.dart';
-
 import 'package:paisa/core/common.dart';
 import 'package:paisa/core/common_enum.dart';
 import 'package:paisa/features/account/presentation/pages/add/add_account_page.dart';
@@ -18,7 +16,6 @@ import 'package:paisa/features/intro/presentation/pages/biometric_page.dart';
 import 'package:paisa/features/intro/presentation/pages/intro_page.dart';
 import 'package:paisa/features/intro/presentation/pages/user_onboarding_page.dart';
 import 'package:paisa/features/overview/presentation/transactions_by_category_list_page.dart';
-import 'package:paisa/features/recurring/presentation/page/add_recurring_page.dart';
 import 'package:paisa/features/search/presentation/pages/search_page.dart';
 import 'package:paisa/features/settings/presentation/pages/app_language_changer_page.dart';
 import 'package:paisa/features/settings/presentation/pages/export_and_import_page.dart';
@@ -190,9 +187,9 @@ class BiometricPageData extends GoRouteData {
     TypedGoRoute<AccountPageData>(
       path: 'account',
     ),
-    TypedGoRoute<AddRecurringPageData>(
-      path: 'recurring',
-    ),
+    // TypedGoRoute<AddRecurringPageData>(
+    //   path: 'recurring',
+    // ),
     TypedGoRoute<ExportAndImportPageData>(
       path: 'export',
     ),
@@ -342,14 +339,9 @@ class DebitPageData extends GoRouteData {
   }
 }
 
-class AddRecurringPageData extends GoRouteData {
-  const AddRecurringPageData();
-
-  @override
-  Widget build(BuildContext context, GoRouterState state) {
-    return const AddRecurringPage();
-  }
-}
+// class AddRecurringPageData extends GoRouteData {
+//   const AddRecurringPageData();
+// }
 
 class FontPickerPageData extends GoRouteData {
   const FontPickerPageData();

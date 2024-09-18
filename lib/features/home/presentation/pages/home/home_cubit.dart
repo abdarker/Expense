@@ -38,10 +38,6 @@ class HomeCubit extends Cubit<HomeState> {
         return PageType.category;
       case 5:
         return PageType.budget;
-      case 6:
-        return PageType.recurring;
-      case 7:
-        return PageType.goals;
       case 0:
       default:
         return PageType.home;

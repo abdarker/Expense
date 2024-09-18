@@ -39,7 +39,7 @@ mixin _$CountryEntity {
 }
 
 /// @nodoc
-abstract interface class $CountryEntityCopyWith<$Res> {
+abstract class $CountryEntityCopyWith<$Res> {
   factory $CountryEntityCopyWith(
           CountryEntity value, $Res Function(CountryEntity) then) =
       _$CountryEntityCopyWithImpl<$Res, CountryEntity>;
@@ -133,7 +133,7 @@ class _$CountryEntityCopyWithImpl<$Res, $Val extends CountryEntity>
 }
 
 /// @nodoc
-abstract interface class _$$CountryEntityImplCopyWith<$Res>
+abstract class _$$CountryEntityImplCopyWith<$Res>
     implements $CountryEntityCopyWith<$Res> {
   factory _$$CountryEntityImplCopyWith(
           _$CountryEntityImpl value, $Res Function(_$CountryEntityImpl) then) =
@@ -329,7 +329,7 @@ class _$CountryEntityImpl implements _CountryEntity {
   }
 }
 
-abstract interface class _CountryEntity implements CountryEntity {
+abstract class _CountryEntity implements CountryEntity {
   factory _CountryEntity(
       {required final String code,
       required final int decimalDigits,

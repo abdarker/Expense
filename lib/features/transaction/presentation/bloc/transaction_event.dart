@@ -14,7 +14,6 @@ class TransactionEvent with _$TransactionEvent {
     @Default(false) bool isFromAccount,
   }) = _TransferAccountEvent;
 
-  const factory TransactionEvent.addRecurring() = _AddRecurringEvent;
 
   const factory TransactionEvent.changeAccount(AccountEntity account) =
       _ChangeAccountEvent;

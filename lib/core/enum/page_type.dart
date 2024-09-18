@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:paisa/core/common.dart';
 
 enum PageType {
@@ -8,9 +7,7 @@ enum PageType {
   category,
   overview,
   debts,
-  budget,
-  recurring,
-  goals;
+  budget;
 
   int get toIndex {
     switch (this) {
@@ -26,10 +23,6 @@ enum PageType {
         return 4;
       case PageType.budget:
         return 5;
-      case PageType.recurring:
-        return 6;
-      case PageType.goals:
-        return 7;
     }
   }
 
@@ -47,10 +40,6 @@ enum PageType {
         return context.loc.debts;
       case PageType.budget:
         return context.loc.budget;
-      case PageType.recurring:
-        return context.loc.recurring;
-      case PageType.goals:
-        return context.loc.goals;
     }
   }
 
@@ -66,12 +55,8 @@ enum PageType {
         return context.loc.addCategoryTooltip;
       case PageType.debts:
         return context.loc.addDebtTooltip;
-      case PageType.recurring:
-        return context.loc.recurring;
       case PageType.budget: // Doesn't have FAB button
         return '';
-      case PageType.goals:
-        return context.loc.addGoalTooltip;
     }
   }
 }

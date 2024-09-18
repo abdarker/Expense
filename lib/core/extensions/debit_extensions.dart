@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:paisa/core/common.dart';
 import 'package:paisa/core/common_enum.dart';
 import 'package:paisa/features/debit/data/models/debit_model.dart';
@@ -12,8 +11,6 @@ extension DebitTypeHelper on DebitType {
         return context.loc.debt;
       case DebitType.credit:
         return context.loc.credit;
-      case DebitType.goal:
-        return context.loc.goals;
     }
   }
 }
@@ -39,9 +36,4 @@ extension DebitModelsHelper on Iterable<DebtModel> {
   List<Map<String, dynamic>> toJson() {
     return map((e) => e.toJson()).toList();
   }
-
-  List<DebtEntity> toEntities() =>
-      where((element) => element.debtType == DebitType.goal)
-          .map((e) => e.toEntity())
-          .toList();
 }

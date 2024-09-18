@@ -24,7 +24,6 @@ mixin _$TransactionEvent {
         changeTransactionType,
     required TResult Function(AccountEntity account, bool isFromAccount)
         transferAccount,
-    required TResult Function() addRecurring,
     required TResult Function(AccountEntity account) changeAccount,
     required TResult Function(CategoryEntity category) changeCategory,
     required TResult Function(int? expenseId) findTransaction,
@@ -38,7 +37,6 @@ mixin _$TransactionEvent {
     TResult? Function(TransactionType transactionType)? changeTransactionType,
     TResult? Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult? Function()? addRecurring,
     TResult? Function(AccountEntity account)? changeAccount,
     TResult? Function(CategoryEntity category)? changeCategory,
     TResult? Function(int? expenseId)? findTransaction,
@@ -52,7 +50,6 @@ mixin _$TransactionEvent {
     TResult Function(TransactionType transactionType)? changeTransactionType,
     TResult Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult Function()? addRecurring,
     TResult Function(AccountEntity account)? changeAccount,
     TResult Function(CategoryEntity category)? changeCategory,
     TResult Function(int? expenseId)? findTransaction,
@@ -67,7 +64,6 @@ mixin _$TransactionEvent {
     required TResult Function(_ChangeTransactionTypeEvent value)
         changeTransactionType,
     required TResult Function(_TransferAccountEvent value) transferAccount,
-    required TResult Function(_AddRecurringEvent value) addRecurring,
     required TResult Function(_ChangeAccountEvent value) changeAccount,
     required TResult Function(_ChangeCategoryEvent value) changeCategory,
     required TResult Function(_FindTransactionFromIdEvent value)
@@ -81,7 +77,6 @@ mixin _$TransactionEvent {
     TResult? Function(_ClearExpenseEvent value)? delete,
     TResult? Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult? Function(_TransferAccountEvent value)? transferAccount,
-    TResult? Function(_AddRecurringEvent value)? addRecurring,
     TResult? Function(_ChangeAccountEvent value)? changeAccount,
     TResult? Function(_ChangeCategoryEvent value)? changeCategory,
     TResult? Function(_FindTransactionFromIdEvent value)? findTransaction,
@@ -94,7 +89,6 @@ mixin _$TransactionEvent {
     TResult Function(_ClearExpenseEvent value)? delete,
     TResult Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult Function(_TransferAccountEvent value)? transferAccount,
-    TResult Function(_AddRecurringEvent value)? addRecurring,
     TResult Function(_ChangeAccountEvent value)? changeAccount,
     TResult Function(_ChangeCategoryEvent value)? changeCategory,
     TResult Function(_FindTransactionFromIdEvent value)? findTransaction,
@@ -196,7 +190,6 @@ class _$AddOrUpdateExpenseEventImpl implements _AddOrUpdateExpenseEvent {
         changeTransactionType,
     required TResult Function(AccountEntity account, bool isFromAccount)
         transferAccount,
-    required TResult Function() addRecurring,
     required TResult Function(AccountEntity account) changeAccount,
     required TResult Function(CategoryEntity category) changeCategory,
     required TResult Function(int? expenseId) findTransaction,
@@ -213,7 +206,6 @@ class _$AddOrUpdateExpenseEventImpl implements _AddOrUpdateExpenseEvent {
     TResult? Function(TransactionType transactionType)? changeTransactionType,
     TResult? Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult? Function()? addRecurring,
     TResult? Function(AccountEntity account)? changeAccount,
     TResult? Function(CategoryEntity category)? changeCategory,
     TResult? Function(int? expenseId)? findTransaction,
@@ -230,7 +222,6 @@ class _$AddOrUpdateExpenseEventImpl implements _AddOrUpdateExpenseEvent {
     TResult Function(TransactionType transactionType)? changeTransactionType,
     TResult Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult Function()? addRecurring,
     TResult Function(AccountEntity account)? changeAccount,
     TResult Function(CategoryEntity category)? changeCategory,
     TResult Function(int? expenseId)? findTransaction,
@@ -251,7 +242,6 @@ class _$AddOrUpdateExpenseEventImpl implements _AddOrUpdateExpenseEvent {
     required TResult Function(_ChangeTransactionTypeEvent value)
         changeTransactionType,
     required TResult Function(_TransferAccountEvent value) transferAccount,
-    required TResult Function(_AddRecurringEvent value) addRecurring,
     required TResult Function(_ChangeAccountEvent value) changeAccount,
     required TResult Function(_ChangeCategoryEvent value) changeCategory,
     required TResult Function(_FindTransactionFromIdEvent value)
@@ -268,7 +258,6 @@ class _$AddOrUpdateExpenseEventImpl implements _AddOrUpdateExpenseEvent {
     TResult? Function(_ClearExpenseEvent value)? delete,
     TResult? Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult? Function(_TransferAccountEvent value)? transferAccount,
-    TResult? Function(_AddRecurringEvent value)? addRecurring,
     TResult? Function(_ChangeAccountEvent value)? changeAccount,
     TResult? Function(_ChangeCategoryEvent value)? changeCategory,
     TResult? Function(_FindTransactionFromIdEvent value)? findTransaction,
@@ -284,7 +273,6 @@ class _$AddOrUpdateExpenseEventImpl implements _AddOrUpdateExpenseEvent {
     TResult Function(_ClearExpenseEvent value)? delete,
     TResult Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult Function(_TransferAccountEvent value)? transferAccount,
-    TResult Function(_AddRecurringEvent value)? addRecurring,
     TResult Function(_ChangeAccountEvent value)? changeAccount,
     TResult Function(_ChangeCategoryEvent value)? changeCategory,
     TResult Function(_FindTransactionFromIdEvent value)? findTransaction,
@@ -380,7 +368,6 @@ class _$ClearExpenseEventImpl implements _ClearExpenseEvent {
         changeTransactionType,
     required TResult Function(AccountEntity account, bool isFromAccount)
         transferAccount,
-    required TResult Function() addRecurring,
     required TResult Function(AccountEntity account) changeAccount,
     required TResult Function(CategoryEntity category) changeCategory,
     required TResult Function(int? expenseId) findTransaction,
@@ -397,7 +384,6 @@ class _$ClearExpenseEventImpl implements _ClearExpenseEvent {
     TResult? Function(TransactionType transactionType)? changeTransactionType,
     TResult? Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult? Function()? addRecurring,
     TResult? Function(AccountEntity account)? changeAccount,
     TResult? Function(CategoryEntity category)? changeCategory,
     TResult? Function(int? expenseId)? findTransaction,
@@ -414,7 +400,6 @@ class _$ClearExpenseEventImpl implements _ClearExpenseEvent {
     TResult Function(TransactionType transactionType)? changeTransactionType,
     TResult Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult Function()? addRecurring,
     TResult Function(AccountEntity account)? changeAccount,
     TResult Function(CategoryEntity category)? changeCategory,
     TResult Function(int? expenseId)? findTransaction,
@@ -435,7 +420,6 @@ class _$ClearExpenseEventImpl implements _ClearExpenseEvent {
     required TResult Function(_ChangeTransactionTypeEvent value)
         changeTransactionType,
     required TResult Function(_TransferAccountEvent value) transferAccount,
-    required TResult Function(_AddRecurringEvent value) addRecurring,
     required TResult Function(_ChangeAccountEvent value) changeAccount,
     required TResult Function(_ChangeCategoryEvent value) changeCategory,
     required TResult Function(_FindTransactionFromIdEvent value)
@@ -452,7 +436,6 @@ class _$ClearExpenseEventImpl implements _ClearExpenseEvent {
     TResult? Function(_ClearExpenseEvent value)? delete,
     TResult? Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult? Function(_TransferAccountEvent value)? transferAccount,
-    TResult? Function(_AddRecurringEvent value)? addRecurring,
     TResult? Function(_ChangeAccountEvent value)? changeAccount,
     TResult? Function(_ChangeCategoryEvent value)? changeCategory,
     TResult? Function(_FindTransactionFromIdEvent value)? findTransaction,
@@ -468,7 +451,6 @@ class _$ClearExpenseEventImpl implements _ClearExpenseEvent {
     TResult Function(_ClearExpenseEvent value)? delete,
     TResult Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult Function(_TransferAccountEvent value)? transferAccount,
-    TResult Function(_AddRecurringEvent value)? addRecurring,
     TResult Function(_ChangeAccountEvent value)? changeAccount,
     TResult Function(_ChangeCategoryEvent value)? changeCategory,
     TResult Function(_FindTransactionFromIdEvent value)? findTransaction,
@@ -567,7 +549,6 @@ class _$ChangeTransactionTypeEventImpl implements _ChangeTransactionTypeEvent {
         changeTransactionType,
     required TResult Function(AccountEntity account, bool isFromAccount)
         transferAccount,
-    required TResult Function() addRecurring,
     required TResult Function(AccountEntity account) changeAccount,
     required TResult Function(CategoryEntity category) changeCategory,
     required TResult Function(int? expenseId) findTransaction,
@@ -584,7 +565,6 @@ class _$ChangeTransactionTypeEventImpl implements _ChangeTransactionTypeEvent {
     TResult? Function(TransactionType transactionType)? changeTransactionType,
     TResult? Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult? Function()? addRecurring,
     TResult? Function(AccountEntity account)? changeAccount,
     TResult? Function(CategoryEntity category)? changeCategory,
     TResult? Function(int? expenseId)? findTransaction,
@@ -601,7 +581,6 @@ class _$ChangeTransactionTypeEventImpl implements _ChangeTransactionTypeEvent {
     TResult Function(TransactionType transactionType)? changeTransactionType,
     TResult Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult Function()? addRecurring,
     TResult Function(AccountEntity account)? changeAccount,
     TResult Function(CategoryEntity category)? changeCategory,
     TResult Function(int? expenseId)? findTransaction,
@@ -622,7 +601,6 @@ class _$ChangeTransactionTypeEventImpl implements _ChangeTransactionTypeEvent {
     required TResult Function(_ChangeTransactionTypeEvent value)
         changeTransactionType,
     required TResult Function(_TransferAccountEvent value) transferAccount,
-    required TResult Function(_AddRecurringEvent value) addRecurring,
     required TResult Function(_ChangeAccountEvent value) changeAccount,
     required TResult Function(_ChangeCategoryEvent value) changeCategory,
     required TResult Function(_FindTransactionFromIdEvent value)
@@ -639,7 +617,6 @@ class _$ChangeTransactionTypeEventImpl implements _ChangeTransactionTypeEvent {
     TResult? Function(_ClearExpenseEvent value)? delete,
     TResult? Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult? Function(_TransferAccountEvent value)? transferAccount,
-    TResult? Function(_AddRecurringEvent value)? addRecurring,
     TResult? Function(_ChangeAccountEvent value)? changeAccount,
     TResult? Function(_ChangeCategoryEvent value)? changeCategory,
     TResult? Function(_FindTransactionFromIdEvent value)? findTransaction,
@@ -655,7 +632,6 @@ class _$ChangeTransactionTypeEventImpl implements _ChangeTransactionTypeEvent {
     TResult Function(_ClearExpenseEvent value)? delete,
     TResult Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult Function(_TransferAccountEvent value)? transferAccount,
-    TResult Function(_AddRecurringEvent value)? addRecurring,
     TResult Function(_ChangeAccountEvent value)? changeAccount,
     TResult Function(_ChangeCategoryEvent value)? changeCategory,
     TResult Function(_FindTransactionFromIdEvent value)? findTransaction,
@@ -771,7 +747,6 @@ class _$TransferAccountEventImpl implements _TransferAccountEvent {
         changeTransactionType,
     required TResult Function(AccountEntity account, bool isFromAccount)
         transferAccount,
-    required TResult Function() addRecurring,
     required TResult Function(AccountEntity account) changeAccount,
     required TResult Function(CategoryEntity category) changeCategory,
     required TResult Function(int? expenseId) findTransaction,
@@ -788,7 +763,6 @@ class _$TransferAccountEventImpl implements _TransferAccountEvent {
     TResult? Function(TransactionType transactionType)? changeTransactionType,
     TResult? Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult? Function()? addRecurring,
     TResult? Function(AccountEntity account)? changeAccount,
     TResult? Function(CategoryEntity category)? changeCategory,
     TResult? Function(int? expenseId)? findTransaction,
@@ -805,7 +779,6 @@ class _$TransferAccountEventImpl implements _TransferAccountEvent {
     TResult Function(TransactionType transactionType)? changeTransactionType,
     TResult Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult Function()? addRecurring,
     TResult Function(AccountEntity account)? changeAccount,
     TResult Function(CategoryEntity category)? changeCategory,
     TResult Function(int? expenseId)? findTransaction,
@@ -826,7 +799,6 @@ class _$TransferAccountEventImpl implements _TransferAccountEvent {
     required TResult Function(_ChangeTransactionTypeEvent value)
         changeTransactionType,
     required TResult Function(_TransferAccountEvent value) transferAccount,
-    required TResult Function(_AddRecurringEvent value) addRecurring,
     required TResult Function(_ChangeAccountEvent value) changeAccount,
     required TResult Function(_ChangeCategoryEvent value) changeCategory,
     required TResult Function(_FindTransactionFromIdEvent value)
@@ -843,7 +815,6 @@ class _$TransferAccountEventImpl implements _TransferAccountEvent {
     TResult? Function(_ClearExpenseEvent value)? delete,
     TResult? Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult? Function(_TransferAccountEvent value)? transferAccount,
-    TResult? Function(_AddRecurringEvent value)? addRecurring,
     TResult? Function(_ChangeAccountEvent value)? changeAccount,
     TResult? Function(_ChangeCategoryEvent value)? changeCategory,
     TResult? Function(_FindTransactionFromIdEvent value)? findTransaction,
@@ -859,7 +830,6 @@ class _$TransferAccountEventImpl implements _TransferAccountEvent {
     TResult Function(_ClearExpenseEvent value)? delete,
     TResult Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult Function(_TransferAccountEvent value)? transferAccount,
-    TResult Function(_AddRecurringEvent value)? addRecurring,
     TResult Function(_ChangeAccountEvent value)? changeAccount,
     TResult Function(_ChangeCategoryEvent value)? changeCategory,
     TResult Function(_FindTransactionFromIdEvent value)? findTransaction,
@@ -882,156 +852,6 @@ abstract class _TransferAccountEvent implements TransactionEvent {
   @JsonKey(ignore: true)
   _$$TransferAccountEventImplCopyWith<_$TransferAccountEventImpl>
       get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$AddRecurringEventImplCopyWith<$Res> {
-  factory _$$AddRecurringEventImplCopyWith(_$AddRecurringEventImpl value,
-          $Res Function(_$AddRecurringEventImpl) then) =
-      __$$AddRecurringEventImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$AddRecurringEventImplCopyWithImpl<$Res>
-    extends _$TransactionEventCopyWithImpl<$Res, _$AddRecurringEventImpl>
-    implements _$$AddRecurringEventImplCopyWith<$Res> {
-  __$$AddRecurringEventImplCopyWithImpl(_$AddRecurringEventImpl _value,
-      $Res Function(_$AddRecurringEventImpl) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$AddRecurringEventImpl implements _AddRecurringEvent {
-  const _$AddRecurringEventImpl();
-
-  @override
-  String toString() {
-    return 'TransactionEvent.addRecurring()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$AddRecurringEventImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(bool isAdding) addOrUpdate,
-    required TResult Function(int expenseId) delete,
-    required TResult Function(TransactionType transactionType)
-        changeTransactionType,
-    required TResult Function(AccountEntity account, bool isFromAccount)
-        transferAccount,
-    required TResult Function() addRecurring,
-    required TResult Function(AccountEntity account) changeAccount,
-    required TResult Function(CategoryEntity category) changeCategory,
-    required TResult Function(int? expenseId) findTransaction,
-    required TResult Function(DateTime dateTime) updateDateTime,
-  }) {
-    return addRecurring();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(bool isAdding)? addOrUpdate,
-    TResult? Function(int expenseId)? delete,
-    TResult? Function(TransactionType transactionType)? changeTransactionType,
-    TResult? Function(AccountEntity account, bool isFromAccount)?
-        transferAccount,
-    TResult? Function()? addRecurring,
-    TResult? Function(AccountEntity account)? changeAccount,
-    TResult? Function(CategoryEntity category)? changeCategory,
-    TResult? Function(int? expenseId)? findTransaction,
-    TResult? Function(DateTime dateTime)? updateDateTime,
-  }) {
-    return addRecurring?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(bool isAdding)? addOrUpdate,
-    TResult Function(int expenseId)? delete,
-    TResult Function(TransactionType transactionType)? changeTransactionType,
-    TResult Function(AccountEntity account, bool isFromAccount)?
-        transferAccount,
-    TResult Function()? addRecurring,
-    TResult Function(AccountEntity account)? changeAccount,
-    TResult Function(CategoryEntity category)? changeCategory,
-    TResult Function(int? expenseId)? findTransaction,
-    TResult Function(DateTime dateTime)? updateDateTime,
-    required TResult orElse(),
-  }) {
-    if (addRecurring != null) {
-      return addRecurring();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_AddOrUpdateExpenseEvent value) addOrUpdate,
-    required TResult Function(_ClearExpenseEvent value) delete,
-    required TResult Function(_ChangeTransactionTypeEvent value)
-        changeTransactionType,
-    required TResult Function(_TransferAccountEvent value) transferAccount,
-    required TResult Function(_AddRecurringEvent value) addRecurring,
-    required TResult Function(_ChangeAccountEvent value) changeAccount,
-    required TResult Function(_ChangeCategoryEvent value) changeCategory,
-    required TResult Function(_FindTransactionFromIdEvent value)
-        findTransaction,
-    required TResult Function(_UpdateDateTimeEvent value) updateDateTime,
-  }) {
-    return addRecurring(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_AddOrUpdateExpenseEvent value)? addOrUpdate,
-    TResult? Function(_ClearExpenseEvent value)? delete,
-    TResult? Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
-    TResult? Function(_TransferAccountEvent value)? transferAccount,
-    TResult? Function(_AddRecurringEvent value)? addRecurring,
-    TResult? Function(_ChangeAccountEvent value)? changeAccount,
-    TResult? Function(_ChangeCategoryEvent value)? changeCategory,
-    TResult? Function(_FindTransactionFromIdEvent value)? findTransaction,
-    TResult? Function(_UpdateDateTimeEvent value)? updateDateTime,
-  }) {
-    return addRecurring?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_AddOrUpdateExpenseEvent value)? addOrUpdate,
-    TResult Function(_ClearExpenseEvent value)? delete,
-    TResult Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
-    TResult Function(_TransferAccountEvent value)? transferAccount,
-    TResult Function(_AddRecurringEvent value)? addRecurring,
-    TResult Function(_ChangeAccountEvent value)? changeAccount,
-    TResult Function(_ChangeCategoryEvent value)? changeCategory,
-    TResult Function(_FindTransactionFromIdEvent value)? findTransaction,
-    TResult Function(_UpdateDateTimeEvent value)? updateDateTime,
-    required TResult orElse(),
-  }) {
-    if (addRecurring != null) {
-      return addRecurring(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _AddRecurringEvent implements TransactionEvent {
-  const factory _AddRecurringEvent() = _$AddRecurringEventImpl;
 }
 
 /// @nodoc
@@ -1115,7 +935,6 @@ class _$ChangeAccountEventImpl implements _ChangeAccountEvent {
         changeTransactionType,
     required TResult Function(AccountEntity account, bool isFromAccount)
         transferAccount,
-    required TResult Function() addRecurring,
     required TResult Function(AccountEntity account) changeAccount,
     required TResult Function(CategoryEntity category) changeCategory,
     required TResult Function(int? expenseId) findTransaction,
@@ -1132,7 +951,6 @@ class _$ChangeAccountEventImpl implements _ChangeAccountEvent {
     TResult? Function(TransactionType transactionType)? changeTransactionType,
     TResult? Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult? Function()? addRecurring,
     TResult? Function(AccountEntity account)? changeAccount,
     TResult? Function(CategoryEntity category)? changeCategory,
     TResult? Function(int? expenseId)? findTransaction,
@@ -1149,7 +967,6 @@ class _$ChangeAccountEventImpl implements _ChangeAccountEvent {
     TResult Function(TransactionType transactionType)? changeTransactionType,
     TResult Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult Function()? addRecurring,
     TResult Function(AccountEntity account)? changeAccount,
     TResult Function(CategoryEntity category)? changeCategory,
     TResult Function(int? expenseId)? findTransaction,
@@ -1170,7 +987,6 @@ class _$ChangeAccountEventImpl implements _ChangeAccountEvent {
     required TResult Function(_ChangeTransactionTypeEvent value)
         changeTransactionType,
     required TResult Function(_TransferAccountEvent value) transferAccount,
-    required TResult Function(_AddRecurringEvent value) addRecurring,
     required TResult Function(_ChangeAccountEvent value) changeAccount,
     required TResult Function(_ChangeCategoryEvent value) changeCategory,
     required TResult Function(_FindTransactionFromIdEvent value)
@@ -1187,7 +1003,6 @@ class _$ChangeAccountEventImpl implements _ChangeAccountEvent {
     TResult? Function(_ClearExpenseEvent value)? delete,
     TResult? Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult? Function(_TransferAccountEvent value)? transferAccount,
-    TResult? Function(_AddRecurringEvent value)? addRecurring,
     TResult? Function(_ChangeAccountEvent value)? changeAccount,
     TResult? Function(_ChangeCategoryEvent value)? changeCategory,
     TResult? Function(_FindTransactionFromIdEvent value)? findTransaction,
@@ -1203,7 +1018,6 @@ class _$ChangeAccountEventImpl implements _ChangeAccountEvent {
     TResult Function(_ClearExpenseEvent value)? delete,
     TResult Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult Function(_TransferAccountEvent value)? transferAccount,
-    TResult Function(_AddRecurringEvent value)? addRecurring,
     TResult Function(_ChangeAccountEvent value)? changeAccount,
     TResult Function(_ChangeCategoryEvent value)? changeCategory,
     TResult Function(_FindTransactionFromIdEvent value)? findTransaction,
@@ -1309,7 +1123,6 @@ class _$ChangeCategoryEventImpl implements _ChangeCategoryEvent {
         changeTransactionType,
     required TResult Function(AccountEntity account, bool isFromAccount)
         transferAccount,
-    required TResult Function() addRecurring,
     required TResult Function(AccountEntity account) changeAccount,
     required TResult Function(CategoryEntity category) changeCategory,
     required TResult Function(int? expenseId) findTransaction,
@@ -1326,7 +1139,6 @@ class _$ChangeCategoryEventImpl implements _ChangeCategoryEvent {
     TResult? Function(TransactionType transactionType)? changeTransactionType,
     TResult? Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult? Function()? addRecurring,
     TResult? Function(AccountEntity account)? changeAccount,
     TResult? Function(CategoryEntity category)? changeCategory,
     TResult? Function(int? expenseId)? findTransaction,
@@ -1343,7 +1155,6 @@ class _$ChangeCategoryEventImpl implements _ChangeCategoryEvent {
     TResult Function(TransactionType transactionType)? changeTransactionType,
     TResult Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult Function()? addRecurring,
     TResult Function(AccountEntity account)? changeAccount,
     TResult Function(CategoryEntity category)? changeCategory,
     TResult Function(int? expenseId)? findTransaction,
@@ -1364,7 +1175,6 @@ class _$ChangeCategoryEventImpl implements _ChangeCategoryEvent {
     required TResult Function(_ChangeTransactionTypeEvent value)
         changeTransactionType,
     required TResult Function(_TransferAccountEvent value) transferAccount,
-    required TResult Function(_AddRecurringEvent value) addRecurring,
     required TResult Function(_ChangeAccountEvent value) changeAccount,
     required TResult Function(_ChangeCategoryEvent value) changeCategory,
     required TResult Function(_FindTransactionFromIdEvent value)
@@ -1381,7 +1191,6 @@ class _$ChangeCategoryEventImpl implements _ChangeCategoryEvent {
     TResult? Function(_ClearExpenseEvent value)? delete,
     TResult? Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult? Function(_TransferAccountEvent value)? transferAccount,
-    TResult? Function(_AddRecurringEvent value)? addRecurring,
     TResult? Function(_ChangeAccountEvent value)? changeAccount,
     TResult? Function(_ChangeCategoryEvent value)? changeCategory,
     TResult? Function(_FindTransactionFromIdEvent value)? findTransaction,
@@ -1397,7 +1206,6 @@ class _$ChangeCategoryEventImpl implements _ChangeCategoryEvent {
     TResult Function(_ClearExpenseEvent value)? delete,
     TResult Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult Function(_TransferAccountEvent value)? transferAccount,
-    TResult Function(_AddRecurringEvent value)? addRecurring,
     TResult Function(_ChangeAccountEvent value)? changeAccount,
     TResult Function(_ChangeCategoryEvent value)? changeCategory,
     TResult Function(_FindTransactionFromIdEvent value)? findTransaction,
@@ -1496,7 +1304,6 @@ class _$FindTransactionFromIdEventImpl implements _FindTransactionFromIdEvent {
         changeTransactionType,
     required TResult Function(AccountEntity account, bool isFromAccount)
         transferAccount,
-    required TResult Function() addRecurring,
     required TResult Function(AccountEntity account) changeAccount,
     required TResult Function(CategoryEntity category) changeCategory,
     required TResult Function(int? expenseId) findTransaction,
@@ -1513,7 +1320,6 @@ class _$FindTransactionFromIdEventImpl implements _FindTransactionFromIdEvent {
     TResult? Function(TransactionType transactionType)? changeTransactionType,
     TResult? Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult? Function()? addRecurring,
     TResult? Function(AccountEntity account)? changeAccount,
     TResult? Function(CategoryEntity category)? changeCategory,
     TResult? Function(int? expenseId)? findTransaction,
@@ -1530,7 +1336,6 @@ class _$FindTransactionFromIdEventImpl implements _FindTransactionFromIdEvent {
     TResult Function(TransactionType transactionType)? changeTransactionType,
     TResult Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult Function()? addRecurring,
     TResult Function(AccountEntity account)? changeAccount,
     TResult Function(CategoryEntity category)? changeCategory,
     TResult Function(int? expenseId)? findTransaction,
@@ -1551,7 +1356,6 @@ class _$FindTransactionFromIdEventImpl implements _FindTransactionFromIdEvent {
     required TResult Function(_ChangeTransactionTypeEvent value)
         changeTransactionType,
     required TResult Function(_TransferAccountEvent value) transferAccount,
-    required TResult Function(_AddRecurringEvent value) addRecurring,
     required TResult Function(_ChangeAccountEvent value) changeAccount,
     required TResult Function(_ChangeCategoryEvent value) changeCategory,
     required TResult Function(_FindTransactionFromIdEvent value)
@@ -1568,7 +1372,6 @@ class _$FindTransactionFromIdEventImpl implements _FindTransactionFromIdEvent {
     TResult? Function(_ClearExpenseEvent value)? delete,
     TResult? Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult? Function(_TransferAccountEvent value)? transferAccount,
-    TResult? Function(_AddRecurringEvent value)? addRecurring,
     TResult? Function(_ChangeAccountEvent value)? changeAccount,
     TResult? Function(_ChangeCategoryEvent value)? changeCategory,
     TResult? Function(_FindTransactionFromIdEvent value)? findTransaction,
@@ -1584,7 +1387,6 @@ class _$FindTransactionFromIdEventImpl implements _FindTransactionFromIdEvent {
     TResult Function(_ClearExpenseEvent value)? delete,
     TResult Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult Function(_TransferAccountEvent value)? transferAccount,
-    TResult Function(_AddRecurringEvent value)? addRecurring,
     TResult Function(_ChangeAccountEvent value)? changeAccount,
     TResult Function(_ChangeCategoryEvent value)? changeCategory,
     TResult Function(_FindTransactionFromIdEvent value)? findTransaction,
@@ -1680,7 +1482,6 @@ class _$UpdateDateTimeEventImpl implements _UpdateDateTimeEvent {
         changeTransactionType,
     required TResult Function(AccountEntity account, bool isFromAccount)
         transferAccount,
-    required TResult Function() addRecurring,
     required TResult Function(AccountEntity account) changeAccount,
     required TResult Function(CategoryEntity category) changeCategory,
     required TResult Function(int? expenseId) findTransaction,
@@ -1697,7 +1498,6 @@ class _$UpdateDateTimeEventImpl implements _UpdateDateTimeEvent {
     TResult? Function(TransactionType transactionType)? changeTransactionType,
     TResult? Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult? Function()? addRecurring,
     TResult? Function(AccountEntity account)? changeAccount,
     TResult? Function(CategoryEntity category)? changeCategory,
     TResult? Function(int? expenseId)? findTransaction,
@@ -1714,7 +1514,6 @@ class _$UpdateDateTimeEventImpl implements _UpdateDateTimeEvent {
     TResult Function(TransactionType transactionType)? changeTransactionType,
     TResult Function(AccountEntity account, bool isFromAccount)?
         transferAccount,
-    TResult Function()? addRecurring,
     TResult Function(AccountEntity account)? changeAccount,
     TResult Function(CategoryEntity category)? changeCategory,
     TResult Function(int? expenseId)? findTransaction,
@@ -1735,7 +1534,6 @@ class _$UpdateDateTimeEventImpl implements _UpdateDateTimeEvent {
     required TResult Function(_ChangeTransactionTypeEvent value)
         changeTransactionType,
     required TResult Function(_TransferAccountEvent value) transferAccount,
-    required TResult Function(_AddRecurringEvent value) addRecurring,
     required TResult Function(_ChangeAccountEvent value) changeAccount,
     required TResult Function(_ChangeCategoryEvent value) changeCategory,
     required TResult Function(_FindTransactionFromIdEvent value)
@@ -1752,7 +1550,6 @@ class _$UpdateDateTimeEventImpl implements _UpdateDateTimeEvent {
     TResult? Function(_ClearExpenseEvent value)? delete,
     TResult? Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult? Function(_TransferAccountEvent value)? transferAccount,
-    TResult? Function(_AddRecurringEvent value)? addRecurring,
     TResult? Function(_ChangeAccountEvent value)? changeAccount,
     TResult? Function(_ChangeCategoryEvent value)? changeCategory,
     TResult? Function(_FindTransactionFromIdEvent value)? findTransaction,
@@ -1768,7 +1565,6 @@ class _$UpdateDateTimeEventImpl implements _UpdateDateTimeEvent {
     TResult Function(_ClearExpenseEvent value)? delete,
     TResult Function(_ChangeTransactionTypeEvent value)? changeTransactionType,
     TResult Function(_TransferAccountEvent value)? transferAccount,
-    TResult Function(_AddRecurringEvent value)? addRecurring,
     TResult Function(_ChangeAccountEvent value)? changeAccount,
     TResult Function(_ChangeCategoryEvent value)? changeCategory,
     TResult Function(_FindTransactionFromIdEvent value)? findTransaction,

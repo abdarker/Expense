@@ -8,7 +8,6 @@ import 'package:injectable/injectable.dart';
 import 'package:paisa/config/routes.dart';
 
 import 'package:paisa/core/common.dart';
-import 'package:paisa/core/enum/recurring_type.dart';
 import 'package:paisa/core/enum/transaction_type.dart';
 import 'package:paisa/core/use_case/use_case.dart';
 import 'package:paisa/features/account/domain/entities/account_entity.dart';
@@ -48,7 +47,6 @@ class TransactionBloc extends Bloc<TransactionEvent, TransactionState> {
   final DeleteTransactionUseCase _deleteTransactionUseCase;
   String? expenseName;
   final GetTransactionUseCase _getTransactionUseCase;
-  RecurringType recurringType = RecurringType.daily;
   int? selectedAccountId;
   CategoryEntity? selectedCategory;
   int? selectedCategoryId;

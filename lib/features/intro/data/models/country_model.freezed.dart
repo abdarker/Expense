@@ -57,7 +57,7 @@ mixin _$CountryModel {
 }
 
 /// @nodoc
-abstract interface class $CountryModelCopyWith<$Res> {
+abstract class $CountryModelCopyWith<$Res> {
   factory $CountryModelCopyWith(
           CountryModel value, $Res Function(CountryModel) then) =
       _$CountryModelCopyWithImpl<$Res, CountryModel>;
@@ -156,7 +156,7 @@ class _$CountryModelCopyWithImpl<$Res, $Val extends CountryModel>
 }
 
 /// @nodoc
-abstract interface class _$$CountryModelImplCopyWith<$Res>
+abstract class _$$CountryModelImplCopyWith<$Res>
     implements $CountryModelCopyWith<$Res> {
   factory _$$CountryModelImplCopyWith(
           _$CountryModelImpl value, $Res Function(_$CountryModelImpl) then) =
@@ -385,7 +385,7 @@ class _$CountryModelImpl extends _CountryModel {
   }
 }
 
-abstract interface class _CountryModel extends CountryModel {
+abstract class _CountryModel extends CountryModel {
   factory _CountryModel(
       {@HiveField(0) required final String code,
       @HiveField(1) @JsonKey(name: 'decimal_digits') final int decimalDigits,

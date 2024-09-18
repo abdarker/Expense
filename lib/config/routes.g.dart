@@ -164,10 +164,6 @@ RouteBase get $landingPageData => GoRouteData.$route(
           factory: $AccountPageDataExtension._fromState,
         ),
         GoRouteData.$route(
-          path: 'recurring',
-          factory: $AddRecurringPageDataExtension._fromState,
-        ),
-        GoRouteData.$route(
           path: 'export',
           factory: $ExportAndImportPageDataExtension._fromState,
         ),
@@ -344,24 +340,6 @@ extension $AccountPageDataExtension on AccountPageData {
         queryParams: {
           if (accountId != null) 'account-id': accountId!.toString(),
         },
-      );
-
-  void go(BuildContext context) => context.go(location);
-
-  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
-
-  void pushReplacement(BuildContext context) =>
-      context.pushReplacement(location);
-
-  void replace(BuildContext context) => context.replace(location);
-}
-
-extension $AddRecurringPageDataExtension on AddRecurringPageData {
-  static AddRecurringPageData _fromState(GoRouterState state) =>
-      const AddRecurringPageData();
-
-  String get location => GoRouteData.$location(
-        '/landing/recurring',
       );
 
   void go(BuildContext context) => context.go(location);

@@ -9,7 +9,6 @@ import 'package:paisa/features/category/data/model/category_model.dart';
 import 'package:paisa/features/debit/data/models/debit_model.dart';
 import 'package:paisa/features/debt_transaction/data/model/debt_transactions_model.dart';
 import 'package:paisa/features/intro/data/models/country_model.dart';
-import 'package:paisa/features/recurring/data/model/recurring.dart';
 import 'package:paisa/features/transaction/data/model/transaction_model.dart';
 
 @module
@@ -41,11 +40,6 @@ abstract class HiveBoxModule {
 
   @lazySingleton
   @preResolve
-  Future<Box<RecurringModel>> recurringBox() =>
-      Hive.openBox<RecurringModel>(BoxType.recurring.name);
-
-  @lazySingleton
-  @preResolve
   @Named('settings')
   Future<Box<dynamic>> boxDynamic() =>
       Hive.openBox<dynamic>(BoxType.settings.name);
@@ -65,8 +59,6 @@ class HiveAdapters {
       ..registerAdapter(DebitTypeAdapter())
       ..registerAdapter(CountryModelAdapter())
       ..registerAdapter(DebitTransactionsModelAdapter())
-      ..registerAdapter(RecurringTypeAdapter())
-      ..registerAdapter(RecurringModelAdapter())
       ..registerAdapter(TransactionModelTypeAdapter())
       ..registerAdapter(FilterExpenseAdapter());
   }
