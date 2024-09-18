@@ -33,8 +33,8 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace "dev.hemanths.paisa"
-    testNamespace "dev.hemanths.paisa.dev"
+    namespace "com.cash.wallet"
+    testNamespace "com.cash.wallet.dev"
     compileSdkVersion flutter.compileSdkVersion
 
 
@@ -60,7 +60,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "dev.hemanths.paisa"
+        applicationId "com.cash.wallet"
         minSdkVersion 26
         targetSdkVersion 34
         versionCode flutterVersionCode.toInteger()

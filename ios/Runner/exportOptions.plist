@@ -12,7 +12,7 @@
     <string>automatic</string>
 	<key>provisioningProfiles</key>
 	<dict>
-        <key>dev.hemanths.paisa.app</key>
+        <key>com.cash.wallet.app</key>
         <string>870c24fb-218b-417a-a447-2b88a86e1e3d</string>
 </dict>
 </plist>

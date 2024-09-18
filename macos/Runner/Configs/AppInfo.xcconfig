@@ -8,7 +8,7 @@
 PRODUCT_NAME = paisa
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = dev.hemanths.paisa
+PRODUCT_BUNDLE_IDENTIFIER = com.cash.wallet
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2024 dev.hemanths. All rights reserved.

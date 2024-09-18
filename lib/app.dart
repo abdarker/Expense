@@ -48,7 +48,7 @@ class _PaisaAppState extends State<PaisaApp> {
         builder: (context, value, _) {
           final int color = value.get(
             appColorKey,
-            defaultValue: 0xFF795548,
+            defaultValue: 0xFF607D8B,
           );
           final Color primaryColor = Color(color);
           final bool isDynamic = value.get(

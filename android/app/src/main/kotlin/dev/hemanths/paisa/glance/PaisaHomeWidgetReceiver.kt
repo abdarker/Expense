@@ -1,4 +1,4 @@
-package dev.hemanths.paisa.glance
+package com.cash.wallet.glance
 
 import HomeWidgetGlanceWidgetReceiver
 

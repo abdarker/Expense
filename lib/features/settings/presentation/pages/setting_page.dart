@@ -1,29 +1,30 @@
 import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:paisa/core/widgets/paisa_scaffold.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:paisa/features/settings/presentation/cubit/settings_cubit.dart';
-import 'package:paisa/features/settings/presentation/widgets/accounts_style_widget.dart';
-import 'package:paisa/features/settings/presentation/widgets/app_theme_widget.dart';
-import 'package:paisa/features/settings/presentation/widgets/choose_calendar_format_widget.dart';
-import 'package:paisa/features/settings/presentation/widgets/true_black_widget_theme.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:paisa/config/routes.dart';
 import 'package:paisa/core/common.dart';
 import 'package:paisa/core/enum/calendar_formats.dart';
+import 'package:paisa/core/widgets/paisa_scaffold.dart';
 import 'package:paisa/core/widgets/paisa_widget.dart';
 import 'package:paisa/features/settings/data/authenticate.dart';
+import 'package:paisa/features/settings/presentation/cubit/settings_cubit.dart';
+import 'package:paisa/features/settings/presentation/widgets/accounts_style_widget.dart';
 import 'package:paisa/features/settings/presentation/widgets/app_font_changer.dart';
 import 'package:paisa/features/settings/presentation/widgets/app_language_changer.dart';
+import 'package:paisa/features/settings/presentation/widgets/app_theme_widget.dart';
 import 'package:paisa/features/settings/presentation/widgets/biometrics_auth_widget.dart';
+import 'package:paisa/features/settings/presentation/widgets/choose_calendar_format_widget.dart';
 import 'package:paisa/features/settings/presentation/widgets/currency_change_widget.dart';
 import 'package:paisa/features/settings/presentation/widgets/setting_option.dart';
 import 'package:paisa/features/settings/presentation/widgets/settings_color_picker_widget.dart';
 import 'package:paisa/features/settings/presentation/widgets/settings_group_card.dart';
 import 'package:paisa/features/settings/presentation/widgets/small_size_fab_widget.dart';
+import 'package:paisa/features/settings/presentation/widgets/true_black_widget_theme.dart';
 import 'package:paisa/features/settings/presentation/widgets/version_widget.dart';
 import 'package:paisa/main.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({
@@ -138,68 +139,72 @@ class SettingsPage extends StatelessWidget {
                   );
                 },
               ),
+              const PaisaDivider(),
+              const VersionWidget(),
             ]),
-            SettingsGroup(
-              title: context.loc.socialLinks,
-              options: [
-                SettingsOption(
-                  icon: MdiIcons.glassMugVariant,
-                  title: context.loc.supportMe,
-                  subtitle: context.loc.supportMeDescription,
-                  onTap: () => launchUrl(
-                    Uri.parse(buyMeCoffeeUrl),
-                    mode: LaunchMode.externalApplication,
-                  ),
-                ),
-                const PaisaDivider(),
-                SettingsOption(
-                  icon: MdiIcons.star,
-                  title: context.loc.appRate,
-                  subtitle: context.loc.appRateDesc,
-                  onTap: _openPlayStoreAppStoreUrl,
-                ),
-                const PaisaDivider(),
-                SettingsOption(
-                  icon: MdiIcons.github,
-                  title: context.loc.github,
-                  subtitle: context.loc.githubText,
-                  onTap: () => launchUrl(
-                    Uri.parse(gitHubUrl),
-                    mode: LaunchMode.externalApplication,
-                  ),
-                ),
-                const PaisaDivider(),
-                SettingsOption(
-                  icon: MdiIcons.send,
-                  title: context.loc.telegram,
-                  subtitle: context.loc.telegramGroup,
-                  onTap: () => launchUrl(
-                    Uri.parse(telegramGroupUrl),
-                    mode: LaunchMode.externalApplication,
-                  ),
-                ),
-                const PaisaDivider(),
-                SettingsOption(
-                  icon: MdiIcons.note,
-                  title: context.loc.privacyPolicy,
-                  onTap: () => launchUrl(
-                    Uri.parse(termsAndConditionsUrl),
-                    mode: LaunchMode.externalApplication,
-                  ),
-                ),
-                const PaisaDivider(),
-                const VersionWidget(),
-              ],
-            ),
+            // SettingsGroup(
+            //   title: context.loc.socialLinks,
+            //   options: [
+            //     SettingsOption(
+            //       icon: MdiIcons.glassMugVariant,
+            //       title: context.loc.supportMe,
+            //       subtitle: context.loc.supportMeDescription,
+            //       onTap: () => launchUrl(
+            //         Uri.parse(buyMeCoffeeUrl),
+            //         mode: LaunchMode.externalApplication,
+            //       ),
+            //     ),
+            //     const PaisaDivider(),
+            //     SettingsOption(
+            //       icon: MdiIcons.star,
+            //       title: context.loc.appRate,
+            //       subtitle: context.loc.appRateDesc,
+            //       onTap: _openPlayStoreAppStoreUrl,
+            //     ),
+            //     const PaisaDivider(),
+            //     SettingsOption(
+            //       icon: MdiIcons.github,
+            //       title: context.loc.github,
+            //       subtitle: context.loc.githubText,
+            //       onTap: () => launchUrl(
+            //         Uri.parse(gitHubUrl),
+            //         mode: LaunchMode.externalApplication,
+            //       ),
+            //     ),
+            //     const PaisaDivider(),
+            //     SettingsOption(
+            //       icon: MdiIcons.send,
+            //       title: context.loc.telegram,
+            //       subtitle: context.loc.telegramGroup,
+            //       onTap: () => launchUrl(
+            //         Uri.parse(telegramGroupUrl),
+            //         mode: LaunchMode.externalApplication,
+            //       ),
+            //     ),
+            //     const PaisaDivider(),
+            //     SettingsOption(
+            //       icon: MdiIcons.note,
+            //       title: context.loc.privacyPolicy,
+            //       onTap: () => launchUrl(
+            //         Uri.parse(termsAndConditionsUrl),
+            //         mode: LaunchMode.externalApplication,
+            //       ),
+            //     ),
+            //     const PaisaDivider(),
+            //     const VersionWidget(),
+            //   ],
+            // ),
             SafeArea(
               top: false,
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: Text(
-                  context.loc.madeWithLoveInIndia,
+                child: Center(
+                  child: Text(
+                    context.loc.madeWithLoveInIndia,
+                  ),
                 ),
               ),
-            ),
+            )
           ],
         ),
       ),
@@ -210,7 +215,7 @@ class SettingsPage extends StatelessWidget {
 void _openPlayStoreAppStoreUrl() {
   if (Platform.isAndroid || Platform.isIOS) {
     final appId =
-        Platform.isAndroid ? 'dev.hemanths.paisa' : 'dev.hemanths.paisa.app';
+        Platform.isAndroid ? 'com.cash.wallet' : 'com.cash.wallet.app';
     final url = Uri.parse(
       Platform.isAndroid
           ? 'https://play.google.com/store/apps/details?id=$appId'

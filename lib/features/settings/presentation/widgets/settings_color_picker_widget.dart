@@ -23,7 +23,7 @@ class SettingsColorPickerWidget extends StatelessWidget {
     if (isDynamic) {
       return context.primary.value;
     }
-    return value.get(appColorKey, defaultValue: 0xFF795548);
+    return value.get(appColorKey, defaultValue: 0xFF607D8B);
   }
 
   @override
@@ -90,7 +90,7 @@ class ColorPickerDialogWidget extends StatelessWidget {
               );
               int selectedColor = value.get(
                 appColorKey,
-                defaultValue: 0xFF795548,
+                defaultValue: 0xFF607D8B,
               );
 
               return SafeArea(
@@ -148,7 +148,7 @@ class ColorPickerDialogWidget extends StatelessWidget {
     } else {
       int selectedColor = settings.get(
         appColorKey,
-        defaultValue: 0xFF795548,
+        defaultValue: 0xFF607D8B,
       );
       return SafeArea(
         child: Column(

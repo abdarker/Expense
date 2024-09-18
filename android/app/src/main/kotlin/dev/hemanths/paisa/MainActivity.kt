@@ -1,4 +1,4 @@
-package dev.hemanths.paisa
+package com.cash.wallet
 
 import android.os.Build
 import android.os.Bundle

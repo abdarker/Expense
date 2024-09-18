@@ -1,5 +1,5 @@
 {
-    "appTitle": "Paisa",
+    "appTitle": "Wallet",
     "@appTitle": {
         "description": "The app name",
         "type": "text"
@@ -490,7 +490,7 @@
         "description": "Section title on settings page for theme",
         "type": "text"
     },
-    "madeWithLoveInIndia": "Made with ♥ in India",
+    "madeWithLoveInIndia": "Made with ♥",
     "@madeWithLoveInIndia": {
         "description": "Message shown on the bottom of the setting screen",
         "type": "text"
@@ -825,7 +825,7 @@
         "description": "Section title text shown on the export and import page",
         "type": "text"
     },
-    "backupAndRestoreJSONDesc": "The file will be a plain JSON file created and exported to save. Please note that if in case anything changes happen in the future in Paisa then this file will be invalid to import",
+    "backupAndRestoreJSONDesc": "The file will be a plain JSON file created and exported to save. Please note that if in case anything changes happen in the future in Wallet then this file will be invalid to import",
     "@backupAndRestoreJSONDesc": {
         "description": "Message shown on the import and export screen",
         "type": "text"
@@ -890,7 +890,7 @@
         "description": "Text shown on the title section of account in transfer section in transaction page",
         "type": "text"
     },
-    "paisaLocked": "Paisa Locked",
+    "paisaLocked": "Wallet Locked",
     "@paisaLocked": {
         "description": "Text shown on the title section of biometric screen",
         "type": "text"
@@ -975,7 +975,7 @@
         "description": "Text shown on settings page",
         "type": "text"
     },
-    "lockAppDescription": "When enabled, you'll need to use fingerprint to open Paisa.",
+    "lockAppDescription": "When enabled, you'll need to use fingerprint to open Wallet.",
     "@lockAppDescription": {
         "description": "Text shown on settings page",
         "type": "text"
@@ -1080,7 +1080,7 @@
         "description": "Subtitle text shown on the overview page bar chat title",
         "type": "text"
     },
-    "welcomeAppTitle": "Welcome to Paisa",
+    "welcomeAppTitle": "Welcome to Wallet",
     "@welcomeAppTitle": {
         "description": "Title text shown on the welcome page",
         "type": "text"

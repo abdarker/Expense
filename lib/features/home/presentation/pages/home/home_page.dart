@@ -266,10 +266,10 @@ Future<void> _updateHomeScreenWidget(
       logicalSize: const Size(520, 550),
     );
     await HomeWidget.updateWidget(
-      name: 'Paisa',
+      name: 'Wallet',
       iOSName: 'PaisaHomeWidgetReceiver',
       androidName: 'PaisaHomeWidgetReceiver',
-      qualifiedAndroidName: 'dev.hemanths.paisa.glance.PaisaHomeWidgetReceiver',
+      qualifiedAndroidName: 'com.cash.wallet.glance.PaisaHomeWidgetReceiver',
     );
   }
 }

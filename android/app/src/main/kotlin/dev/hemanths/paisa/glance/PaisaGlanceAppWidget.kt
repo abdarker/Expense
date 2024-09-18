@@ -1,4 +1,4 @@
-package dev.hemanths.paisa.glance
+package com.cash.wallet.glance
 
 import HomeWidgetGlanceState
 import HomeWidgetGlanceStateDefinition
@@ -23,7 +23,7 @@ import androidx.glance.layout.Alignment
 import androidx.glance.layout.Column
 import androidx.glance.layout.ContentScale
 import androidx.glance.layout.fillMaxSize
-import dev.hemanths.paisa.MainActivity
+import com.cash.wallet.MainActivity
 import es.antonborri.home_widget.HomeWidgetBackgroundIntent
 import es.antonborri.home_widget.actionStartActivity
 

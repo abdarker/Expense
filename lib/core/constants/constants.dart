@@ -1,6 +1,6 @@
 const gitHubUrl = 'https://github.com/RetroMusicPlayer/Paisa';
 const playStoreUrl =
-    'https://play.google.com/store/apps/details?id=dev.hemanths.paisa';
+    'https://play.google.com/store/apps/details?id=com.cash.wallet';
 const telegramGroupUrl = 'https://t.me/app_paisa';
 const termsAndConditionsUrl = 'https://hemanths.dev/privacy';
 
