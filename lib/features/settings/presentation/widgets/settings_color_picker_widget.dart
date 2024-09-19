@@ -1,11 +1,9 @@
 import 'dart:io';
 
-import 'package:flutter/material.dart';
-
 import 'package:device_info_plus/device_info_plus.dart';
+import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-
 import 'package:paisa/config/routes.dart';
 import 'package:paisa/core/common.dart';
 import 'package:paisa/core/widgets/future_resolve.dart';
@@ -23,7 +21,7 @@ class SettingsColorPickerWidget extends StatelessWidget {
     if (isDynamic) {
       return context.primary.value;
     }
-    return value.get(appColorKey, defaultValue: 0xFF607D8B);
+    return value.get(appColorKey, defaultValue: 0xFFF96262);
   }
 
   @override
@@ -90,7 +88,7 @@ class ColorPickerDialogWidget extends StatelessWidget {
               );
               int selectedColor = value.get(
                 appColorKey,
-                defaultValue: 0xFF607D8B,
+                defaultValue: 0xFFF96262,
               );
 
               return SafeArea(
@@ -148,7 +146,7 @@ class ColorPickerDialogWidget extends StatelessWidget {
     } else {
       int selectedColor = settings.get(
         appColorKey,
-        defaultValue: 0xFF607D8B,
+        defaultValue: 0xFFF96262,
       );
       return SafeArea(
         child: Column(

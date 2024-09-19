@@ -1,22 +1,20 @@
+import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
-import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hive_flutter/adapters.dart';
-import 'package:paisa/core/app_providers.dart';
-import 'package:paisa/features/settings/presentation/pages/font_picker_page.dart';
-import 'package:paisa/main.dart';
-import 'package:provider/provider.dart';
-
 import 'package:paisa/config/routes.dart';
+import 'package:paisa/core/app_providers.dart';
 import 'package:paisa/core/common.dart';
 import 'package:paisa/core/theme/app_theme.dart';
 import 'package:paisa/features/intro/data/models/country_model.dart';
 import 'package:paisa/features/intro/domain/entities/country_entity.dart';
+import 'package:paisa/features/settings/presentation/pages/font_picker_page.dart';
+import 'package:paisa/main.dart';
+import 'package:provider/provider.dart';
 
 class PaisaApp extends StatefulWidget {
   const PaisaApp({
@@ -48,7 +46,7 @@ class _PaisaAppState extends State<PaisaApp> {
         builder: (context, value, _) {
           final int color = value.get(
             appColorKey,
-            defaultValue: 0xFF607D8B,
+            defaultValue: 0xFFF96262,
           );
           final Color primaryColor = Color(color);
           final bool isDynamic = value.get(
